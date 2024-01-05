@@ -1,5 +1,5 @@
  
-Starting from different device after cloning repository 
-[Extensions] = [Prettier]  [Folder Icon Themes]
-[Packages] =  [npm i install -g]  + [npm start]
-[Adding_File] = [.env]
+Starting from different device after cloning repository </br>
+[Extensions] = [Prettier] , [Folder Icon Themes]  </br>
+[Packages] =  [npm i install -g]  +  [npm start]  </br>
+[Adding_File] = [.env]  </br>
