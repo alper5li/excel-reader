@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8"/>
+    <title>Üsküdar Üniversitesi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="public/css/vendor/bootstrap.min.css">
+
+    <script src="public/js/vendor/xlsx.full.min.js" defer></script>
+    <script type ="text/javascript" src="public/js/table2excel.js"></script>
+</head>
+<body onload="onloadFunc()">
+
+<div class="container">
+    <h2 id="header" class="text-center mt-4 mb-4">Excel Dosyasını Yükleyiniz</h2>
+    <div class="card">
+        <input type="text" id="InputID" onkeyup="Search()" placeholder="Search by ID.."/>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <b id="cardHeader">Dosya Seçiniz ...</b>
+        </div>
+        <div class="card-body">
+            <input type="file" id="excel_file"/>
+            <b id="excel_name"></b>
+        </div>
+    </div>
+    <div id="selectColumnDiv">
+    </div>
+    <div>            
+      <br>
+      <button id="uploadButton" type="button" class="btn btn-primary">Dosyayı Yükle</button>  
+</div>
+
+    <div id="excel_data" class="mt-5">
+    </div>
+</div>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="modal-content">
+            
+        </div>
+    </div>
+</div>
+
+<!----><!----><!----><!----><!----><!----><!---->
+<div class="modal fade" id="isOk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Uyarı</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Bu dosyayı göndermek istediğinize emin misiniz ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+        <button type="button" id="ImSureButton" class="btn btn-primary">Gönder</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!----><!----><!----><!----><!----><!----><!---->
+<script src="./public/js/vendor/jquery.min.js"></script>
+<script src="./public/js/vendor/bootstrap.min.js"></script>
+<script src="./public/js/temp.js"></script>
+
+
+</body>
+</html>
+
+

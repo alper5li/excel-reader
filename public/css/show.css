@@ -1,0 +1,32 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: 100px;
+    padding: 20px;
+}
+
+
+table
+{
+    margin-left: 250px;
+}
+
+i
+{
+    font-size:25px;
+    cursor: pointer;
+    color:#215bad;
+}
+
+ .id, .name_lastname, .e_mail, .grade, .points, .status
+{
+    border: 1px solid black;
+    margin: 100px;
+    padding: 20px;
+} 
